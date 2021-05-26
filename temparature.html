@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let temperature = function (nd){
+    this.c =nd;
+    this.setC =function (doi){
+      return this.c = doi
+    }
+    this.changeF =function (){
+      return nd*9/5+32;
+    };
+    this.changeK = function (){
+      return nd +273.15;
+    }
+  };
+  let nhietDo =new temperature(30);
+  console.log(nhietDo.changeF())
+  console.log(nhietDo.setC(80))
+  console.log(nhietDo.changeK())
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Ractangle(cd,cr){
+        this.cd =cd;
+        this.cr =cr;
+        this.getCd=function (){
+            return cd;
+        }
+        this.getCr=function (){
+            return cr;
+        }
+        this.S =function(){
+
+            return this.getCd*this.getCr
+        }
+        this.P = function(){
+
+            return (this.cd+ this.cr)*2
+        }
+    }
+    let Ractangle1 = new Ractangle(4,5);
+    alert(Ractangle1.P())
+</script>
+</body>
+</html>
